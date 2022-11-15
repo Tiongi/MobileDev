@@ -39,7 +39,8 @@ Button register, cancel;
                  String no4 = n4.getText().toString();
                 if(b.equals(register) ) {
                     builder.setTitle("Registration Form")
-                            .setMessage(no1 + no2 + no3 + no4)
+                            .setMessage("Firstname: "+ no1 +"\n Lastname: "+ no2 +"\n Email: "+ no3 +
+                                    "\n Password: "+ no4)
                             .setPositiveButton("Ok", (dialog, which) -> finish())
                             .show();
                     return;
